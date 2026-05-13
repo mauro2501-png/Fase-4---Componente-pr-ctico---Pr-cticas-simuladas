@@ -1,0 +1,136 @@
+
+============================================================
+  SESIÓN INICIADA: 2026-05-13 01:39:59
+  Sistema Software FJ — Gestión de Reservas
+============================================================
+
+--- INICIO DEL SISTEMA SOFTWARE FJ ---
+[2026-05-13 01:39:59] [INFO ] Cliente registrado: Cliente [C001] | Nombre: Ana Gómez | Correo: ana.gomez@email.com | Teléfono: 3001234567 | Tipo: VIP | Reservas activas: 0
+[2026-05-13 01:39:59] [INFO ] Cliente registrado: Cliente [C002] | Nombre: Luis Martínez | Correo: luis.m@empresa.co | Teléfono: 3109876543 | Tipo: CORPORATIVO | Reservas activas: 0
+[2026-05-13 01:39:59] [INFO ] Cliente registrado: Cliente [C003] | Nombre: Sara Pineda | Correo: sara.p@correo.com | Teléfono: 3205551234 | Tipo: REGULAR | Reservas activas: 0
+[2026-05-13 01:39:59] [ERROR] registrar_cliente → [ERR_CLI_002] Ya existe un cliente con ID 'C001'.
+[2026-05-13 01:39:59] [INFO ] Servicio registrado: [SALA] Sala Ejecutiva A | ID: SRV001 | Precio base: $80,000/hr | Capacidad: 10 personas | con proyector | Estado: Disponible
+[2026-05-13 01:39:59] [INFO ] Servicio registrado: [EQUIPO] Alquiler de Laptops | ID: SRV002 | Tipo: LAPTOP | Precio base: $25,000/hr/unidad | Unidades disponibles: 5 | Estado: Disponible
+[2026-05-13 01:39:59] [INFO ] Servicio registrado: [ASESORIA] Asesoría en Arquitectura de Software | ID: SRV003 | Área: Tecnología | Nivel: EXPERTO | Precio base: $120,000/hr | Estado: Disponible
+[2026-05-13 01:39:59] [INFO ] Servicio registrado: [SALA] Sala de Capacitación B | ID: SRV004 | Precio base: $60,000/hr | Capacidad: 20 personas | sin proyector | Estado: Disponible
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES001] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 3.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [INFO ] Reserva confirmada: RES001 | Costo: $358,785.00
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES002] | Cliente: Luis Martínez | Servicio: Alquiler de Laptops | Duración: 8.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [INFO ] Reserva confirmada: RES002 | Costo: $637,245.00
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES003] | Cliente: Sara Pineda | Servicio: Asesoría en Arquitectura de Software | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [INFO ] Reserva confirmada: RES003 | Costo: $742,560.00
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES_BAD2] | Cliente: Sara Pineda | Servicio: Sala Ejecutiva A | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [ERROR] confirmar_reserva(RES_BAD2) → [ERR_RES_001] No se pudo calcular el costo para la reserva 'RES_BAD2'.
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES_BAD3] | Cliente: Luis Martínez | Servicio: Sala de Capacitación B | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [ERROR] confirmar_reserva(RES_BAD3) → [ERR_SRV_002] El servicio 'Sala de Capacitación B' [SRV004] no está disponible.
+[2026-05-13 01:39:59] [INFO ] Reserva procesada exitosamente: RES001
+[2026-05-13 01:39:59] [INFO ] Reserva procesada exitosamente: RES002
+[2026-05-13 01:39:59] [INFO ] Reserva procesada exitosamente: RES003
+[2026-05-13 01:39:59] [INFO ] Reserva creada: Reserva [RES004] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-13 01:39:59] [INFO ] Reserva confirmada: RES004 | Costo: $117,810.00
+[2026-05-13 01:39:59] [INFO ] Reserva cancelada: RES004 | Motivo: Cliente solicitó cambio de fecha
+[2026-05-13 01:39:59] [ERROR] cancelar_reserva(RES001) → [ERR_OPE_001] No se puede cancelar la reserva 'RES001': ya fue procesada.
+
+--- FIN DEL SISTEMA SOFTWARE FJ ---
+
+============================================================
+  SESIÓN INICIADA: 2026-05-12 20:47:17
+  Sistema Software FJ — Gestión de Reservas
+============================================================
+
+--- INICIO DEL SISTEMA SOFTWARE FJ ---
+[2026-05-12 20:47:17] [INFO ] Cliente registrado: Cliente [C001] | Nombre: Ana Gómez | Correo: ana.gomez@email.com | Teléfono: 3001234567 | Tipo: VIP | Reservas activas: 0
+[2026-05-12 20:47:17] [INFO ] Cliente registrado: Cliente [C002] | Nombre: Luis Martínez | Correo: luis.m@empresa.co | Teléfono: 3109876543 | Tipo: CORPORATIVO | Reservas activas: 0
+[2026-05-12 20:47:17] [INFO ] Cliente registrado: Cliente [C003] | Nombre: Sara Pineda | Correo: sara.p@correo.com | Teléfono: 3205551234 | Tipo: REGULAR | Reservas activas: 0
+[2026-05-12 20:47:17] [ERROR] registrar_cliente → [ERR_CLI_002] Ya existe un cliente con ID 'C001'.
+[2026-05-12 20:47:17] [INFO ] Servicio registrado: [SALA] Sala Ejecutiva A | ID: SRV001 | Precio base: $80,000/hr | Capacidad: 10 personas | con proyector | Estado: Disponible
+[2026-05-12 20:47:17] [INFO ] Servicio registrado: [EQUIPO] Alquiler de Laptops | ID: SRV002 | Tipo: LAPTOP | Precio base: $25,000/hr/unidad | Unidades disponibles: 5 | Estado: Disponible
+[2026-05-12 20:47:17] [INFO ] Servicio registrado: [ASESORIA] Asesoría en Arquitectura de Software | ID: SRV003 | Área: Tecnología | Nivel: EXPERTO | Precio base: $120,000/hr | Estado: Disponible
+[2026-05-12 20:47:17] [INFO ] Servicio registrado: [SALA] Sala de Capacitación B | ID: SRV004 | Precio base: $60,000/hr | Capacidad: 20 personas | sin proyector | Estado: Disponible
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES001] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 3.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [INFO ] Reserva confirmada: RES001 | Costo: $358,785.00
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES002] | Cliente: Luis Martínez | Servicio: Alquiler de Laptops | Duración: 8.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [INFO ] Reserva confirmada: RES002 | Costo: $637,245.00
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES003] | Cliente: Sara Pineda | Servicio: Asesoría en Arquitectura de Software | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [INFO ] Reserva confirmada: RES003 | Costo: $742,560.00
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES_BAD2] | Cliente: Sara Pineda | Servicio: Sala Ejecutiva A | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [ERROR] confirmar_reserva(RES_BAD2) → [ERR_RES_001] No se pudo calcular el costo para la reserva 'RES_BAD2'.
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES_BAD3] | Cliente: Luis Martínez | Servicio: Sala de Capacitación B | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [ERROR] confirmar_reserva(RES_BAD3) → [ERR_SRV_002] El servicio 'Sala de Capacitación B' [SRV004] no está disponible.
+[2026-05-12 20:47:17] [INFO ] Reserva procesada exitosamente: RES001
+[2026-05-12 20:47:17] [INFO ] Reserva procesada exitosamente: RES002
+[2026-05-12 20:47:17] [INFO ] Reserva procesada exitosamente: RES003
+[2026-05-12 20:47:17] [INFO ] Reserva creada: Reserva [RES004] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:17] [INFO ] Reserva confirmada: RES004 | Costo: $117,810.00
+[2026-05-12 20:47:17] [INFO ] Reserva cancelada: RES004 | Motivo: Cliente solicitó cambio de fecha
+[2026-05-12 20:47:17] [ERROR] cancelar_reserva(RES001) → [ERR_OPE_001] No se puede cancelar la reserva 'RES001': ya fue procesada.
+
+--- FIN DEL SISTEMA SOFTWARE FJ ---
+
+============================================================
+  SESIÓN INICIADA: 2026-05-12 20:47:52
+  Sistema Software FJ — Gestión de Reservas
+============================================================
+
+--- INICIO DEL SISTEMA SOFTWARE FJ ---
+[2026-05-12 20:47:52] [INFO ] Cliente registrado: Cliente [C001] | Nombre: Ana Gómez | Correo: ana.gomez@email.com | Teléfono: 3001234567 | Tipo: VIP | Reservas activas: 0
+[2026-05-12 20:47:52] [INFO ] Cliente registrado: Cliente [C002] | Nombre: Luis Martínez | Correo: luis.m@empresa.co | Teléfono: 3109876543 | Tipo: CORPORATIVO | Reservas activas: 0
+[2026-05-12 20:47:52] [INFO ] Cliente registrado: Cliente [C003] | Nombre: Sara Pineda | Correo: sara.p@correo.com | Teléfono: 3205551234 | Tipo: REGULAR | Reservas activas: 0
+[2026-05-12 20:47:52] [ERROR] registrar_cliente → [ERR_CLI_002] Ya existe un cliente con ID 'C001'.
+[2026-05-12 20:47:52] [INFO ] Servicio registrado: [SALA] Sala Ejecutiva A | ID: SRV001 | Precio base: $80,000/hr | Capacidad: 10 personas | con proyector | Estado: Disponible
+[2026-05-12 20:47:52] [INFO ] Servicio registrado: [EQUIPO] Alquiler de Laptops | ID: SRV002 | Tipo: LAPTOP | Precio base: $25,000/hr/unidad | Unidades disponibles: 5 | Estado: Disponible
+[2026-05-12 20:47:52] [INFO ] Servicio registrado: [ASESORIA] Asesoría en Arquitectura de Software | ID: SRV003 | Área: Tecnología | Nivel: EXPERTO | Precio base: $120,000/hr | Estado: Disponible
+[2026-05-12 20:47:52] [INFO ] Servicio registrado: [SALA] Sala de Capacitación B | ID: SRV004 | Precio base: $60,000/hr | Capacidad: 20 personas | sin proyector | Estado: Disponible
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES001] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 3.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [INFO ] Reserva confirmada: RES001 | Costo: $358,785.00
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES002] | Cliente: Luis Martínez | Servicio: Alquiler de Laptops | Duración: 8.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [INFO ] Reserva confirmada: RES002 | Costo: $637,245.00
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES003] | Cliente: Sara Pineda | Servicio: Asesoría en Arquitectura de Software | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [INFO ] Reserva confirmada: RES003 | Costo: $742,560.00
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES_BAD2] | Cliente: Sara Pineda | Servicio: Sala Ejecutiva A | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [ERROR] confirmar_reserva(RES_BAD2) → [ERR_RES_001] No se pudo calcular el costo para la reserva 'RES_BAD2'.
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES_BAD3] | Cliente: Luis Martínez | Servicio: Sala de Capacitación B | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [ERROR] confirmar_reserva(RES_BAD3) → [ERR_SRV_002] El servicio 'Sala de Capacitación B' [SRV004] no está disponible.
+[2026-05-12 20:47:52] [INFO ] Reserva procesada exitosamente: RES001
+[2026-05-12 20:47:52] [INFO ] Reserva procesada exitosamente: RES002
+[2026-05-12 20:47:52] [INFO ] Reserva procesada exitosamente: RES003
+[2026-05-12 20:47:52] [INFO ] Reserva creada: Reserva [RES004] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:47:52] [INFO ] Reserva confirmada: RES004 | Costo: $117,810.00
+[2026-05-12 20:47:52] [INFO ] Reserva cancelada: RES004 | Motivo: Cliente solicitó cambio de fecha
+[2026-05-12 20:47:52] [ERROR] cancelar_reserva(RES001) → [ERR_OPE_001] No se puede cancelar la reserva 'RES001': ya fue procesada.
+
+--- FIN DEL SISTEMA SOFTWARE FJ ---
+
+============================================================
+  SESIÓN INICIADA: 2026-05-12 20:56:43
+  Sistema Software FJ — Gestión de Reservas
+============================================================
+
+--- INICIO DEL SISTEMA SOFTWARE FJ ---
+[2026-05-12 20:56:43] [INFO ] Cliente registrado: Cliente [C001] | Nombre: Ana Gómez | Correo: ana.gomez@email.com | Teléfono: 3001234567 | Tipo: VIP | Reservas activas: 0
+[2026-05-12 20:56:43] [INFO ] Cliente registrado: Cliente [C002] | Nombre: Luis Martínez | Correo: luis.m@empresa.co | Teléfono: 3109876543 | Tipo: CORPORATIVO | Reservas activas: 0
+[2026-05-12 20:56:43] [INFO ] Cliente registrado: Cliente [C003] | Nombre: Sara Pineda | Correo: sara.p@correo.com | Teléfono: 3205551234 | Tipo: REGULAR | Reservas activas: 0
+[2026-05-12 20:56:43] [ERROR] registrar_cliente → [ERR_CLI_002] Ya existe un cliente con ID 'C001'.
+[2026-05-12 20:56:43] [INFO ] Servicio registrado: [SALA] Sala Ejecutiva A | ID: SRV001 | Precio base: $80,000/hr | Capacidad: 10 personas | con proyector | Estado: Disponible
+[2026-05-12 20:56:43] [INFO ] Servicio registrado: [EQUIPO] Alquiler de Laptops | ID: SRV002 | Tipo: LAPTOP | Precio base: $25,000/hr/unidad | Unidades disponibles: 5 | Estado: Disponible
+[2026-05-12 20:56:43] [INFO ] Servicio registrado: [ASESORIA] Asesoría en Arquitectura de Software | ID: SRV003 | Área: Tecnología | Nivel: EXPERTO | Precio base: $120,000/hr | Estado: Disponible
+[2026-05-12 20:56:43] [INFO ] Servicio registrado: [SALA] Sala de Capacitación B | ID: SRV004 | Precio base: $60,000/hr | Capacidad: 20 personas | sin proyector | Estado: Disponible
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES001] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 3.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [INFO ] Reserva confirmada: RES001 | Costo: $358,785.00
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES002] | Cliente: Luis Martínez | Servicio: Alquiler de Laptops | Duración: 8.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [INFO ] Reserva confirmada: RES002 | Costo: $637,245.00
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES003] | Cliente: Sara Pineda | Servicio: Asesoría en Arquitectura de Software | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [INFO ] Reserva confirmada: RES003 | Costo: $742,560.00
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES_BAD2] | Cliente: Sara Pineda | Servicio: Sala Ejecutiva A | Duración: 2.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [ERROR] confirmar_reserva(RES_BAD2) → [ERR_RES_001] No se pudo calcular el costo para la reserva 'RES_BAD2'.
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES_BAD3] | Cliente: Luis Martínez | Servicio: Sala de Capacitación B | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [ERROR] confirmar_reserva(RES_BAD3) → [ERR_SRV_002] El servicio 'Sala de Capacitación B' [SRV004] no está disponible.
+[2026-05-12 20:56:43] [INFO ] Reserva procesada exitosamente: RES001
+[2026-05-12 20:56:43] [INFO ] Reserva procesada exitosamente: RES002
+[2026-05-12 20:56:43] [INFO ] Reserva procesada exitosamente: RES003
+[2026-05-12 20:56:43] [INFO ] Reserva creada: Reserva [RES004] | Cliente: Ana Gómez | Servicio: Sala Ejecutiva A | Duración: 1.0h | Estado: PENDIENTE | Costo: $0.00
+[2026-05-12 20:56:43] [INFO ] Reserva confirmada: RES004 | Costo: $117,810.00
+[2026-05-12 20:56:43] [INFO ] Reserva cancelada: RES004 | Motivo: Cliente solicitó cambio de fecha
+[2026-05-12 20:56:43] [ERROR] cancelar_reserva(RES001) → [ERR_OPE_001] No se puede cancelar la reserva 'RES001': ya fue procesada.
+
+--- FIN DEL SISTEMA SOFTWARE FJ ---
